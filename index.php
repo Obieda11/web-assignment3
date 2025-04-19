@@ -36,11 +36,11 @@ $tasks = [
     ["id" => 4, "title" => "watch a movie", "status" => "done", "due" => "03/19/2025"]
 ];
 
-// Test filterByStatus
+
 $result = filterByStatus($tasks, "done");
 print_r($result);
 
-// Test groupByStatus
+
 $result = groupByStatus($tasks);
 print_r($result);
 
