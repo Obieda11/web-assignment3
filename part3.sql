@@ -24,3 +24,18 @@ WHERE ToDoList_id = 1;
 UPDATE Task
 SET status = 'done'
 WHERE id = 1;  
+
+
+DELETE FROM Task
+WHERE id = 1;  
+
+
+
+SELECT * FROM Task
+WHERE due_date < '2025-05-01';
+
+
+SELECT COUNT(*) AS done_task_count
+FROM Task t
+JOIN "To Do List" td ON t.ToDoList_id = td.id
+WHERE t.status = 'done' AND td.user_id = 1;  
